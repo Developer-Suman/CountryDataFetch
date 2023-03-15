@@ -1,0 +1,65 @@
+﻿@model CountryDataFetch.Models.Country
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Country Delete</h1>
+<h1>Are you sure want to delete This?</h1>
+
+
+<div class="row">
+    <div class="col-3">
+        @Html.DisplayNameFor(model=>model.Id)
+    </div>
+    <div class="col-9">
+        @Html.DisplayFor(model=>model.Id)
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-3">
+        @Html.DisplayNameFor(model=>model.Name)
+    </div>
+    <div class="col-9">
+        @Html.DisplayFor(model=>model.Name)
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-3">
+        @Html.DisplayNameFor(model=>model.Region)
+    </div>
+    <div class="col-9">
+        @Html.DisplayFor(model=>model.Region)
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-3">
+        @Html.DisplayNameFor(model=>model.CreatedDate)
+    </div>
+    <div class="col-9">
+        @Html.DisplayFor(model=>model.CreatedDate)
+    </div>
+</div>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for=Id/>
+    <div class="row">
+    <div class="col-3">
+    </div>
+    <div class="col-9">
+        <input type="submit" value="Delete" class="btn btn-danger"/>
+        <a asp-action="Index" class="btn btn-danger">Back To List</a>
+        a
+    </div>
+</div>
+
+
+</form>
+
+
+
+
+
+
